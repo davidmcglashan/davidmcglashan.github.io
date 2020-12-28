@@ -1,0 +1,25 @@
+First
+2020-12-16/16th December 2020
+
+Go back far enough on any blog and you'll eventually get to the first post. This is mine. It doubles as a rudimentary test of the "markdown" parser, so we can test that it will do things like _emphasis_ and *strong text passages*.
+
+This line has a _ inserted for fun. Hopefully the parser will leave it alone and not render the rest of the article in italics. We should be able to leave stray * in there too ...
+
+_This one_ has *a little* bit of _ everything
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Ordered lists are also desirtable.
+
+# This will be a list wrapped in <ol> tags.
+# And so will this be
+# and this one.
+
+And the list is done.
+# but here's a new one!
+
+# Can we start a new list after a blank line?
+* Can we start an _unordered_ list on the next line? Let's hope so!
+
+Now it's' time to think about how ^hyperlinks|http://www.google.com/^ might work. Or ^hyperlinks with *styled _text_* in them|http://www.cnn.com/^
+	

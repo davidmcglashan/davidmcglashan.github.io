@@ -1,0 +1,16 @@
+A differently specified subset of Markdown
+2020-12-26/26th December 2020
+
+Yes, I've written my own Markdown parser. This is mostly because ...
+
+# I want to write it myself (I can still do code!)
+# I don't want to have to depend on any third-party library, no matter how small and efficient it is.
+# I only intend to use a handful of HTML tags (<a>, <strong>, <ul>, etc.) so I don't need a complete parser. I will unapologetically use a differently specified subset of Markdown.
+
+Tag support currently runs to ...
+
+<em> tags with _
+<strong> tags with *
+<ol> done with # as the first char on each line
+<ul> done with * as the first char on each line
+<a> done with ^ where the link text and the href are separated by a |

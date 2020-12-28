@@ -1,0 +1,4 @@
+Short
+2020-12-28/28th December 2020
+
+This article has been left deliberately short in order to test how shorter articles are handled by the software that builds this site.
