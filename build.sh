@@ -1,26 +1,26 @@
 #! /bin/zsh
 
-export BASE="/Users/david/Web/david.mcglashan.net"
+export BASE="/Users/david/Web/davidmcglashan.github.io"
 
 cd $BASE
 
-echo 'emptying Apache folder ...'
-rm -R $BASE/Apache/*
+echo 'emptying docs folder ...'
+rm -R $BASE/docs/*
 
 echo 'restoring index.html ...'
-cp $BASE/index.html $BASE/Apache/index.html
+cp $BASE/index.html $BASE/docs/index.html
 
 echo 'restoring articles'
-cp -R $BASE/articles $BASE/Apache/articles
+cp -R $BASE/articles $BASE/docs/articles
 
 echo 'rebuilding sidebar'
-python3 $BASE/sidebar.py > $BASE/Apache/sidebar.json
+python3 $BASE/sidebar.py > $BASE/docs/sidebar.json
 
 echo 'rebuilding article roll'
-python3 $BASE/roll.py > $BASE/Apache/roll.json
+python3 $BASE/roll.py > $BASE/docs/roll.json
 
 echo 'restoring javascript'
-cat $BASE/*.js > $BASE/Apache/js.js
+cat $BASE/*.js > $BASE/docs/js.js
 
 echo 'restoring CSS'
-cp $BASE/css.css $BASE/Apache/css.css
+cp $BASE/css.css $BASE/docs/css.css
