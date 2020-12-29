@@ -1,0 +1,159 @@
+/* CSS HEX 
+#--dark-purple: #230612ff;
+
+#--midnight-green-eagle-green: #0f5257ff;
+#--mgeg10: #dcf7f9ff;
+#--mgeg20: #85e4eaff;
+#--mgeg30: #2ed0dcff;
+#--mgeg40: #0f5257ff;
+
+#--white: #ffffffff;
+#--jade: #26a96cff;
+#--celtic-blue: #1167d0ff;
+#--medium-aquamarine: #16db93ff;
+#--icterine: #fff45cff;
+*/
+
+/* FLEX & LAYOUT DIRECTIVES ============ */
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+body div {
+	flex: 1 0 auto;
+}
+
+nav {
+	max-width: 25%;
+	min-width: 25%;
+	position: sticky;
+	top: 0px;
+	float: left;
+}
+
+main {
+	margin-left: 30%;
+	max-width: 44em;
+}
+
+footer {
+	flex-shrink: 0;
+}
+
+
+
+
+
+/* APPEARANCE DIRECTIVES ============ */
+
+* {
+	font-family: 'Hind Guntur', sans-serif;
+	line-height: 1.5;
+	font-size: 13pt;
+}
+
+body {
+	background-color: #fff;
+	color: #230612ff;
+	margin: 0;
+}
+
+footer {
+	background: #0f5257ff;
+	padding: 2em 1em;
+	border-top: 8px solid #85e4ea;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Mada', sans-serif; 
+	color: #0f5257ff;
+	margin: 0;
+}
+header {
+	padding: 0.5em 0 0 0.5em;
+	background: #dcf0f0ff;
+	border-bottom: 8px solid #85e4ea;
+}
+header svg {
+	max-height: 6em;
+}
+header svg text {
+	font-family: 'Sevillana', sans-serif; 
+	color: #26a96cff;
+	fill: #26a96cff;
+}
+h2 {
+	font-size: 4em;
+	line-height: 1.1;
+	border-bottom: 8px dashed #85e4eaff;
+	display: table;
+	margin-bottom: 0.2em;
+	margin-top: 0.25em;
+}
+
+time {
+	font-weight: bold;
+	display: block;
+	border-bottom: 8px dotted #85e4ea;
+	padding: 0 0 0.4em;
+	margin-top: 1.5em;
+}
+
+a {
+	color: #1167d0ff;
+}
+
+nav {
+	text-align: right;
+	padding-top: 1.6em;
+}
+
+nav p {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav p a {
+	text-decoration: none;
+	color: #0f5257ff;
+}
+
+nav p a:hover, nav p a:focus {
+	text-decoration: underline;
+}
+
+nav ul li {
+	list-style-type: none;
+	margin-bottom: 1em;
+	color: #0f5257ff;
+}
+
+article:not(:last-child) {
+	padding-bottom: 4em;
+	border-bottom: 8px solid #85e4ea;
+	margin-bottom: 4em;
+}
+
+@media only screen and (max-width: 1100px) {
+}
+
+/* Smallest screen size (800px and less) */
+@media only screen and (max-width: 800px) {
+	main {
+		margin-left: 4%;
+		max-width: 92%;
+	}
+	nav {
+		display: none;
+	}
+}
+
+
+

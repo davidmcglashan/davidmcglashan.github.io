@@ -1,0 +1,8 @@
+404 Not Found
+2020-12-16/16th December 2020
+
+The page you were looking for couldn't be found. Or I couldn't understand the query params in your GET request, or something.
+
+See, you have to specify the page id as a single parameter after /? in the page URL. And it has to be an eight-digit number that represents the date. If the page javascript finds none of that it'll redirect you to the 404 message -- which itself is also an article in the blog engine with the page id "404", but that's another story ...
+
+^Home|/^
