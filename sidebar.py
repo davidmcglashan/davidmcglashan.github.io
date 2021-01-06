@@ -23,6 +23,9 @@ for file in files:
 		obj = {}
 		text = f.read()
 		lines = text.split("\n")
+		if lines[0].startswith( 'DRAFT' ):
+			continue
+
 		obj['id'] = file[9:17]
 		obj['title'] = lines[0].strip()
 		sidebar.append( obj )
