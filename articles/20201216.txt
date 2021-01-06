@@ -22,4 +22,3 @@ And the list is done.
 * Can we start an _unordered_ list on the next line? Let's hope so!
 
 Now it's' time to think about how ^hyperlinks|http://www.google.com/^ might work. Or ^hyperlinks with *styled _text_* in them|http://www.cnn.com/^
-	
