@@ -53,16 +53,6 @@
 			}
 		},
 		{
-			"file": "parse.html",
-			"settings":
-			{
-				"buffer_size": 1262,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "<!DOCTYPE html>"
-			}
-		},
-		{
 			"file": "index.html",
 			"settings":
 			{
@@ -80,15 +70,6 @@
 			}
 		},
 		{
-			"file": "articles/20201216.txt",
-			"settings":
-			{
-				"buffer_size": 1373,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "articles/404.txt",
 			"settings":
 			{
@@ -96,6 +77,15 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "First"
+			}
+		},
+		{
+			"file": "articles/20201216.txt",
+			"settings":
+			{
+				"buffer_size": 1373,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -109,10 +99,18 @@
 			}
 		},
 		{
+			"file": "articles/20201228.txt",
+			"settings":
+			{
+				"buffer_size": 172,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "build.sh",
 			"settings":
 			{
-				"buffer_size": 560,
+				"buffer_size": 549,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -146,26 +144,10 @@
 			}
 		},
 		{
-			"file": "david.mcglashan.net.sublime-project",
+			"contents": "TO DO\n-----\n\na11y testing\n\nJS\n- do an ajax/parse() in <a> tags and make an SPA-like site\n- separate files (e.g. parser/roll/page) minifed together\n- minify: optionable in build.sh for debug purposes\n\nCSS\n- LESS compiler for the CSS\n  - multiple input files, one for layout, one for appearance, constants, etc.\n- footer appearance\n\nImages \n- in parser\n- on file system\n- in deployment scripts\n\nNAV\n- on smaller screens does what?\n\nPARSER\n{noparse} toggles the parser on/off for lines\n{pre}\n\n- Deploy script to github\n- command line git to commit and push the Apache folder",
 			"settings":
 			{
-				"buffer_size": 4,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "david.mcglashan.net.sublime-workspace",
-			"settings":
-			{
-				"buffer_size": 10252,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "TO DO\n-----\n\nmore articles\n\npython script to build a roll\n- 10 most recent articles - hence the date keys!\n- exclude 404\n- used to build side bar\n- used for index.html\n\na11y teting\n\nparams in the URL for pages\n\nLESS compiler for the CSS\n\nDeploy script to github\n- recover github account\n- setup pages (again)\n- command line git to commit and push the Apache folder\n\nMinify the js\n- optionable in build.sh for debug purposes\n\nImages \n- in parser\n- on file system\n- in deployment scripts",
-			"settings":
-			{
-				"buffer_size": 485,
+				"buffer_size": 571,
 				"line_ending": "Unix",
 				"name": "TO DO"
 			}
@@ -219,20 +201,26 @@
 	},
 	"file_history":
 	[
-		"/Users/david/Web/david.mcglashan.net/articles/20201612.txt",
+		"/Users/david/Library/Application Support/Sublime Text 3/Local/Session.sublime_session",
+		"/Users/david/Library/Application Support/Sublime Text 3/Local/Auto Save Session.sublime_session",
+		"/Users/david/Web/davidmcglashan.github.io/parse.html",
 		"/Users/david/Library/Application Support/Sublime Text 3/Packages/User/david.mcglashan.net.sublime-build",
+		"/Users/david/Web/davidmcglashan.github.io/david.mcglashan.net.sublime-workspace",
+		"/Users/david/Web/davidmcglashan.github.io/david.mcglashan.net.sublime-project",
+		"/Users/david/Web/david.mcglashan.net/articles/20201612.txt",
 		"/C/Users/david.mcglashan/OneDrive - Ideagen plc/Desktop/david/david.mcglashan.net.sublime-project",
 		"/C/Users/david.mcglashan/OneDrive - Ideagen plc/Desktop/david/david.mcglashan.net.sublime-workspace"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 101.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -240,6 +228,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\n",
+			"github",
 			"\\n",
 			"var"
 		],
@@ -261,7 +251,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -287,10 +277,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1347.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -323,35 +313,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "parse.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1262,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1204,
-								1255
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<!DOCTYPE html>",
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
@@ -375,11 +336,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "page.js",
 					"semi_transient": false,
 					"settings":
@@ -404,7 +365,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "articles/404.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"auto_name": "First",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -432,40 +422,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "articles/404.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 518,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								404,
-								404
-							]
-						],
-						"settings":
-						{
-							"auto_name": "First",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "articles/20201226.txt",
 					"semi_transient": false,
 					"settings":
@@ -490,16 +451,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "build.sh",
+					"buffer": 7,
+					"file": "articles/20201228.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 560,
+						"buffer_size": 172,
 						"regions":
 						{
 						},
@@ -512,13 +473,41 @@
 						],
 						"settings":
 						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "build.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/ShellScript/Bash.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -548,7 +537,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -577,13 +566,13 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -613,80 +602,23 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
 					"buffer": 12,
-					"file": "david.mcglashan.net.sublime-project",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4,
+						"buffer_size": 571,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "david.mcglashan.net.sublime-workspace",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10252,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 485,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								120
+								13,
+								13
 							]
 						],
 						"settings":
@@ -698,7 +630,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -750,11 +682,11 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"pinned_build_system": "Packages/User/david.mcglashan.net.sublime-build",
 	"project": "david.mcglashan.net.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 90.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -788,7 +720,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -796,7 +728,7 @@
 	"show_open_files": true,
 	"show_tabs": false,
 	"side_bar_visible": true,
-	"side_bar_width": 167.0,
+	"side_bar_width": 238.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
