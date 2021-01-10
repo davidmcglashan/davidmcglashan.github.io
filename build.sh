@@ -6,6 +6,7 @@ cd $BASE
 
 echo 'emptying docs folder ...'
 rm -R $BASE/docs/*
+cp $BASE/CNAME $BASE/docs/CNAME
 
 echo 'restoring index.html ...'
 cp $BASE/index.html $BASE/docs/index.html
