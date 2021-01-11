@@ -37,6 +37,11 @@ fetch( loadAll ? 'roll.json' : 'sidebar.json' )
 					parse( obj.article )
 				}
 			});
+
+			if ( loadAll ) {
+				let nodes = document.getElementsByTagName("TITLE");
+				nodes[0].innerHTML = "david.mcglashan.net";
+			}
  		}
  	);
 
