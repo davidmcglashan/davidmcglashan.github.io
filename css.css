@@ -69,6 +69,7 @@ footer {
 	background: #0f5257ff;
 	padding: 2em 1em;
 	border-top: 8px solid #85e4ea;
+	color: #dcf0f0ff;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -89,6 +90,7 @@ header svg text {
 	color: #26a96cff;
 	fill: #26a96cff;
 }
+
 h2 {
 	font-size: 4em;
 	line-height: 1.1;
