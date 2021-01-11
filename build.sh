@@ -20,8 +20,12 @@ python3 $BASE/sidebar.py > $BASE/docs/sidebar.json
 echo 'rebuilding article roll'
 python3 $BASE/roll.py > $BASE/docs/roll.json
 
+# TODO this minifier requires python v2 and it doesn't work with modern
+# javascript. 
 echo 'restoring javascript'
 cat $BASE/*.js > $BASE/docs/js.js
+#python $BASE/minify.py > $BASE/docs/js.js
+#rm $BASE/temp.js
 
 echo 'restoring CSS'
 cp $BASE/css.css $BASE/docs/css.css
