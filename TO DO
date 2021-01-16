@@ -1,0 +1,28 @@
+TO DO
+-----
+
+a11y testing
+
+
+JS
+- do an ajax/parse() in <a> tags and make an SPA-like site
+- separate files (e.g. parser/roll/page) minifed together
+- minify: optionable in build.sh for debug purposes
+
+CSS
+- LESS compiler for the CSS
+  - multiple input files, one for layout, one for appearance, constants, etc.
+- footer appearance
+- make the H1 smaller on iPhone screens
+
+Images 
+- in parser
+- on file system
+- in deployment scripts
+
+NAV
+- on smaller screens does what?
+
+PARSER
+{noparse} toggles the parser on/off for lines
+{pre}
