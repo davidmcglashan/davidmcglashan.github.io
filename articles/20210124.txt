@@ -35,6 +35,6 @@ This text will appear pre-formatted.
 </pre>
 !parseOff
 
-New lines are honoured, and double exclamations *!!* get replaced by single *!* for the sole reason that it currently allows me to show a !parseOff directive in the output of a !parseOff directive.
+New lines are honoured, and double exclamations *!!* get replaced by single *!* for the sole reason that it currently allows me to show a !parseOff directive in the output of a !parseOff directive. You can see this for yourself in the ^source of this article|articles/20210124.txt^.
 
 It might, I acknowledge, play havoc with my later ASCII art.
