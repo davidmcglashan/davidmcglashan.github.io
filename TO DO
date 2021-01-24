@@ -1,8 +1,26 @@
 TO DO
 -----
 
-a11y testing
+Images 
+- in parser
+- on file system
+- in deployment scripts
 
+BUGS
+- hyperlinks (prob. img too!) without | don't work
+
+SIDEBAR
+- sticky
+  - about
+  - software
+- recent
+- trivial
+  - tags cheat sheet
+  - twitter
+  - github
+  - linked in
+
+a11y testing
 
 JS
 - do an ajax/parse() in <a> tags and make an SPA-like site
@@ -14,11 +32,6 @@ CSS
   - multiple input files, one for layout, one for appearance, constants, etc.
 - footer appearance
 - make the H1 smaller on iPhone screens
-
-Images 
-- in parser
-- on file system
-- in deployment scripts
 
 NAV
 - on smaller screens does what?
