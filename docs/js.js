@@ -179,6 +179,7 @@ function parse( text ) {
 
 	let lines = text.split("\n");
 	let parent;
+	let parseOff = false;
 
 	lines.forEach( function( str,i,a ) {
 		// First line is the article title. Add an H2 for this, and also set
@@ -201,6 +202,25 @@ function parse( text ) {
 
 		str = escapeHtml( str );
 		if ( str.length > 0 ) {
+
+			if ( str === '!parseOff' ) {
+				parseOff = !parseOff;
+
+				// Use a <pre> tag for !parseOff content.
+				if ( parseOff ) {
+					parent = document.createElement("pre");
+					article.appendChild( parent );
+				} else {
+					parent = null;
+				}
+				return;
+			}
+
+			// If we're in parseOff mode, don't do anything fancy.
+			if ( parseOff ) {
+				parent.innerHTML = parent.innerHTML + str.replace(/!!/g, "!") + "\n";
+				return;
+			}
 
 			let listElement = listable( str );
 			if ( listElement ) {

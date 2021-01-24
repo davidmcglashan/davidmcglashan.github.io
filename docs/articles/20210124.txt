@@ -1,0 +1,40 @@
+Image and pre-formatted text support
+2021-01-24/24th January 2021
+
+The ^previous article|?20210123^ required me to add image support to the site. This was simple enough: the files go in an assets folder and it's a trivial task to include them in the deploy scripts.
+
+Markup looks like this ...
+
+!parseOff
+$URL|alt text$
+!parseOff
+
+... and this inserts the following HTML ...
+
+!parseOff
+<img src="URL" alt="alt text">
+!parseOff
+
+CSS pins it to a maximum width of 75% of its container.
+
+The parsing wasn't exactly tricky either. The syntax is very similar to that of hyperlinks - provide URL and link text - and so it follows that the javascript handling <a> and <img> tags is also very similar. But I've _pragmatically_ duplicated it with minor modifications instead of doing the proper refactor job that would enable some code reuse. I can feel the presence of the technical debt here, but as of right now, I'm too lazy to do the honourable thing to tackle it properly. I've been in the product owner game too long: add value, keep the increment releasable.
+
+Oh, and this very post here required me to add support for pre-formatted text so I can show the markup being marked up without the parser marking it up. In the article source, if a line contains only the !parseOff string it will disable the parser until it encounters another line containing only the !parseOff string. All the text in between will be inserted into a <pre> node.
+
+!parseOff
+!!parseOff
+This text will appear pre-formatted.
+!!parseOff
+!parseOff
+
+... which produces the following HTML ...
+
+!parseOff
+<pre>
+This text will appear pre-formatted.
+</pre>
+!parseOff
+
+New lines are honoured, and double exclamations *!!* get replaced by single *!* for the sole reason that it currently allows me to show a !parseOff directive in the output of a !parseOff directive.
+
+It might, I acknowledge, play havoc with my later ASCII art.
