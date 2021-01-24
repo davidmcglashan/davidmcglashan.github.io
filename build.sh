@@ -14,6 +14,9 @@ cp $BASE/index.html $BASE/docs/index.html
 echo 'restoring articles'
 cp -R $BASE/articles $BASE/docs/articles
 
+echo 'restoring assets'
+cp -R $BASE/assets $BASE/docs/assets
+
 echo 'rebuilding sidebar'
 python3 $BASE/sidebar.py > $BASE/docs/sidebar.json
 

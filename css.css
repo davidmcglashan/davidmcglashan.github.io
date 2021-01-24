@@ -143,6 +143,10 @@ article:not(:last-child) {
 	margin-bottom: 4em;
 }
 
+img {
+	max-width: 75%;
+}
+
 @media only screen and (max-width: 1100px) {
 }
 
