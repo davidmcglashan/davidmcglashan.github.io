@@ -1,11 +1,6 @@
 TO DO
 -----
 
-Images 
-- in parser
-- on file system
-- in deployment scripts
-
 BUGS
 - hyperlinks (prob. img too!) without | don't work
 
@@ -20,12 +15,15 @@ SIDEBAR
   - github
   - linked in
 
+Make 404 a _404 and use the underscore as an excluder in the sidebar.
+
 a11y testing
 
 JS
 - do an ajax/parse() in <a> tags and make an SPA-like site
 - separate files (e.g. parser/roll/page) minifed together
 - minify: optionable in build.sh for debug purposes
+- hyperlinks() and images() are similar and should be refactored.
 
 CSS
 - LESS compiler for the CSS
