@@ -1,0 +1,14 @@
+Hacker News CSS
+2021-01-23/23rd January 2021
+
+I read ^Hacker News|http://news.ycombinator.com^ as a long-time lurker since I find it to be a useful aggregator of tech-related news. Some of the commentary can also be insightful. I don't have an account and I've never contributed to the community there but it always figures among the _daily read_ bookmarks on most of my devices.
+
+On my Macbook Air it looks tired. Might be the colours; might be the fonts. It's probably as simple as modern design trends leaving it behind. I'm not a graphic designer and so I struggle to articulate why I feel the way I do. However, what I am is someone who knows how to install a browser plug-in and has just enough CSS-fu to hack away at something.
+
+So I made it look like this ...
+
+$assets/20210123-hacker-news-css.png|Hacker News CSS$
+
+You can do so too: the ^stylesheet is on github|https://github.com/davidmcglashan/custom-css/blob/main/hacker-news-y-combinator.css^. It probably looks pony on anything other than a modern Mac running Safari since that's the only platform it's been tested on. But, hey! It's a public repo; send me a pull request.
+
+Creating the CSS was an interesting exercise in hacks-undoing-hacks. The Hacker News main page's layout is driven by nested <table>s and often I needed by use an _!important_ directive in a rule to make it stick. While I was grateful on one hand that such things are possible, on the other hand it felt dirty and wrong. Essentially, I moved the ickiness of the site from the consumer to the developer. It's more pleasant to look at now that more of the eldritch horror has been pushed back under the surface.

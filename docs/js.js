@@ -89,6 +89,41 @@ function hyperlinks( str ) {
 	return ret;
 }
 
+function images( str ) {
+	let tokens = str.split("$");
+
+	// No. of tokens found determines what we do with the string. One string = zero tokens: do no further processing.
+	if ( tokens.length === 1 ) {
+		return tokens[0];
+	}
+	if ( tokens.length === 2 ) {
+		return tokens[0] + "$" + tokens[1];
+	}
+
+	// Iterate the tokens inserting alternating open and closed nodes between them.
+	let open = false;
+	let ret = "";
+	let href;
+	let replace;
+	tokens.forEach( function(str,i) {
+		// If this token isn't an open link, put it on the return string.
+		if ( !open ) {
+    		ret = ret + str;
+    		open = true;
+    		return;
+		}
+
+		// Open link means this token contains the link text and the href for the <a> tag.
+		let ix = str.indexOf("|");
+		if ( ix !== -1 ) {
+	    	ret = ret + "<a href=\"" + str.substring(0,ix) + "\"><img alt=\""+ str.substring(ix+1) + "\" src=\"" + str.substring(0,ix) + "\"></a>";
+		}
+		open = false;
+	});
+
+	return ret;
+}
+
 function replace( str, char, node ) {
 	let tokens = str.split(char);
 
@@ -120,10 +155,11 @@ function replace( str, char, node ) {
 
 // Parse the text, looking for bold and italics and whatnot 
 function html( str ) {
-	let html = hyperlinks( str ); 
-	html = replace( html, "*", "strong" );
-	html = replace( html, "_", "em" );
-	return html;
+	str = hyperlinks( str ); 
+	str = images( str ); 
+	str = replace( str, "*", "strong" );
+	str = replace( str, "_", "em" );
+	return str;
 }
 
 function listable( str ) {
