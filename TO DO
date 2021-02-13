@@ -17,6 +17,8 @@ SIDEBAR
 
 Make 404 into _404 and use the underscore as an excluder in the sidebar.
 
+Deal with more than 10 pages!
+
 a11y testing
 
 JS
