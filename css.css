@@ -68,7 +68,6 @@ body {
 footer {
 	background: #0f5257ff;
 	padding: 2em 1em;
-	border-top: 8px solid #85e4ea;
 	color: #dcf0f0ff;
 }
 
@@ -78,34 +77,36 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 }
 header {
-	padding: 0.5em 0 0 0.5em;
-	background: #dcf0f0ff;
-	border-bottom: 8px solid #85e4ea;
+	padding: 1em 1em 0.5em 1em;
+	background: #26a96cff;
 }
 header svg {
 	max-height: 6em;
 }
 header svg text {
 	font-family: 'Sevillana', sans-serif; 
-	color: #26a96cff;
-	fill: #26a96cff;
+	color: white;
+	fill: white;
 }
 
 h2 {
 	font-size: 4em;
 	line-height: 1.1;
-	border-bottom: 8px dashed #85e4eaff;
+	background-color: #85e4eaff;
 	display: table;
-	margin-bottom: 0.2em;
-	margin-top: 0.25em;
+	margin: 0.25em 0 0.2em -0.4em;
+	padding: 0.25em 0.25em 1em 0.35em;
+	border-radius: 0.5em;
 }
 
 time {
 	font-weight: bold;
 	display: block;
-	border-bottom: 8px dotted #85e4ea;
-	padding: 0 0 0.4em;
-	margin-top: 1.5em;
+	border-top: 1px dotted black;
+	padding: 0.4em 0;
+	margin-top: -3.5em;
+	position: absolute;
+	width: 100%;
 }
 
 a {
@@ -137,10 +138,10 @@ nav ul li {
 	color: #0f5257ff;
 }
 
-article:not(:last-child) {
-	padding-bottom: 4em;
-	border-bottom: 8px solid #85e4ea;
-	margin-bottom: 4em;
+article {
+	position: relative;
+	margin-top: 2em;
+	margin-bottom: 6em;
 }
 
 img {
@@ -162,6 +163,9 @@ pre {
 
 /* Smallest screen size (800px and less) */
 @media only screen and (max-width: 800px) {
+	h2 {
+		font-size: 3em;
+	}
 	main {
 		margin-left: 4%;
 		max-width: 92%;
