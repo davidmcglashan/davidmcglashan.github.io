@@ -10,10 +10,6 @@ count = 0
 roll = []
 
 for file in files:	
-	# max 10 articles
-	count += 1
-	if ( count == 10 ):
-		break
 
 	# Exclude 404 from the roll
 	if file.endswith( "/404.txt" ):
@@ -30,5 +26,10 @@ for file in files:
 		obj['title'] = lines[0].strip()
 		obj['article'] = text
 		roll.append( obj )
+
+	# max 10 articles
+	count += 1
+	if ( count == 10 ):
+		break
 
 print( json.dumps( roll ) )

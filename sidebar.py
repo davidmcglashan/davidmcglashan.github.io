@@ -9,11 +9,7 @@ count = 0
 
 sidebar = []
 
-for file in files:	
-	# max 10 articles
-	count += 1
-	if ( count == 10 ):
-		break
+for file in files:
 
 	# Exclude 404 from the roll
 	if file.endswith( "/404.txt" ):
@@ -29,5 +25,10 @@ for file in files:
 		obj['id'] = file[9:17]
 		obj['title'] = lines[0].strip()
 		sidebar.append( obj )
+
+	# max 10 articles
+	count += 1
+	if ( count == 10 ):
+		break
 
 print( json.dumps( sidebar ) )
