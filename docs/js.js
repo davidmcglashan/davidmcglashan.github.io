@@ -82,6 +82,8 @@ function hyperlinks( str ) {
 		let ix = str.indexOf("|");
 		if ( ix !== -1 ) {
 	    	ret = ret + "<a href=\""+ str.substring(ix+1) + "\">" + html( str.substring(0,ix) ) + "</a>";
+		} else {
+			ret = ret + "<a href=\""+ str + "\">" + str + "</a>";
 		}
 		open = false;
 	});

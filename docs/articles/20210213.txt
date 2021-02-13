@@ -1,0 +1,18 @@
+Links without content
+2021-02-13/13th February 2021
+
+Markup for hyperlinks looks like this ...
+
+!parseOff
+^URL|link description^
+!parseOff
+
+... but it can now also look like this ...
+
+!parseOff
+^URL^
+!parseOff
+
+... which lets you provide hyperlinks without a link description. In those cases the URL is used as the link description, and as the alt text. This was done as a syntactic sugar: you don't always want to describe a link, but under the previous mark up you'd have to post the URL in the link tag twice.
+
+Here's a live example: ^https://www.google.com/^.
