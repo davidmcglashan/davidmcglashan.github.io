@@ -15,7 +15,7 @@ SIDEBAR
   - github
   - linked in
 
-Make 404 a _404 and use the underscore as an excluder in the sidebar.
+Make 404 into _404 and use the underscore as an excluder in the sidebar.
 
 a11y testing
 
