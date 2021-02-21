@@ -68,10 +68,12 @@ function images( str ) {
     		return;
 		}
 
-		// Open link means this token contains the link text and the href for the <a> tag.
+		// If the token contains a | then there's an image URL and alt text.
 		let ix = str.indexOf("|");
 		if ( ix !== -1 ) {
 	    	ret = ret + "<a href=\"" + str.substring(0,ix) + "\"><img alt=\""+ str.substring(ix+1) + "\" src=\"" + str.substring(0,ix) + "\"></a>";
+		} else {
+	    	ret = ret + "<a href=\"" + str + "\"><img alt=\""+ str + "\" src=\"" + str + "\"></a>";
 		}
 		open = false;
 	});
