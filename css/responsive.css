@@ -1,0 +1,50 @@
+/* Hide the button that opens the nav when it's hidden. */
+main>div[role="button"] {
+	display: none;
+}
+
+main>div[role="button"] > a {
+	background: var(--mgeg00);
+	color: var(--page-fg);
+	padding: 0.25em 1em 0em;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+main>div[role="button"] > a:hover,
+main>div[role="button"] > a:focus {
+	color: var(--mgeg00);
+	background: var(--page-fg);
+	text-decoration: underline;
+}
+
+/* Smallest screen size (800px and less) */
+@media only screen and (max-width: 800px) {
+	h2 {
+		font-size: 3em;
+	}
+	main {
+		margin-left: 4%;
+		max-width: 92%;
+	}
+
+	/* Hide the button that opens the nav when it's hidden. */
+	main>div[role="button"] {
+		display: block;
+	}
+
+	/* Hide the <nav> but also tweak its appearance for small screens: full page, left aligned, etc. */
+	nav {
+		display: none;
+		text-align: inherit;
+		max-width: initial;
+		min-width: initial;
+		position: relative;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+
+	nav ul {
+		padding-inline-start: 0;
+	}
+}
