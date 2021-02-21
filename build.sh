@@ -29,3 +29,7 @@ cat $BASE/js/*.js > $BASE/docs/js.js
 
 echo 'restoring CSS ...'
 cat $BASE/css/*.css > $BASE/docs/css.css
+
+# Print the date and time so I can eyeball the console to see when this last ran
+echo '--'
+date

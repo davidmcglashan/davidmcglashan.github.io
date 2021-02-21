@@ -4,13 +4,6 @@ TO DO
 BUGS
 - hyperlinks (prob. img too!) without | don't work
 
-CSS
-- multiple input files, one for layout, one for appearance, constants, etc.
-- concatenate in build script
-- :root{} with variables
-  - change the value, not the variable
-  - https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/
-
 NAV
 - on smaller screens does what?
 
@@ -27,6 +20,9 @@ SIDEBAR
 
 FOOTER
 - can we do better? Don't know what!
+
+CSS
+- dark mode LOL
 
 a11y testing
 

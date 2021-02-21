@@ -1,19 +1,122 @@
-/* CSS HEX 
-#--dark-purple: #230612ff;
+/* APPEARANCE DIRECTIVES ============ */
 
-#--midnight-green-eagle-green: #0f5257ff;
-#--mgeg10: #dcf7f9ff;
-#--mgeg20: #85e4eaff;
-#--mgeg30: #2ed0dcff;
-#--mgeg40: #0f5257ff;
+* {
+	font-family: 'Hind Guntur', sans-serif;
+	line-height: 1.5;
+	font-size: 13pt;
+}
 
-#--white: #ffffffff;
-#--jade: #26a96cff;
-#--celtic-blue: #1167d0ff;
-#--medium-aquamarine: #16db93ff;
-#--icterine: #fff45cff;
-*/
+body {
+	background-color: var(--page-bg);
+	color: var(--page-fg);
+	margin: 0;
+}
 
+footer {
+	background: var(--foot-bg);
+	color: var(--foot-fg);
+	padding: 2em 1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Mada', sans-serif; 
+	color: var(--page-hd);
+	margin: 0;
+}
+header {
+	background: var(--head-bg);
+	color: var(--head-fg);
+	padding: 1em 1em 0.5em 1em;
+}
+header svg {
+	max-height: 6em;
+}
+header svg text {
+	font-family: 'Sevillana', sans-serif; 
+	color: var(--head-fg);
+	fill: var(--head-fg);
+}
+
+h2 {
+	font-size: 4em;
+	line-height: 1.1;
+	background-color: var(--mgeg20);
+	display: table;
+	margin: 0.25em 0 0.2em -0.4em;
+	padding: 0.25em 0.25em 1em 0.35em;
+	border-radius: 0.5em;
+}
+
+time {
+	font-weight: bold;
+	display: block;
+	border-top: 1px dotted var(--mgeg40);
+	padding: 0.4em 0;
+	margin-top: -3.5em;
+	position: absolute;
+	width: 100%;
+}
+
+a {
+	color: var(--page-ln);
+}
+
+nav {
+	text-align: right;
+	padding-top: 1.6em;
+}
+
+nav p {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav p a {
+	text-decoration: none;
+	color: var(--nav-fg);
+}
+
+nav p a:hover, nav p a:focus {
+	text-decoration: underline;
+}
+
+nav ul li {
+	list-style-type: none;
+	margin-bottom: 0.5em;
+	color: var(--nav-fg);
+}
+
+article {
+	position: relative;
+	margin-top: 2em;
+	margin-bottom: 6em;
+}
+
+img {
+	max-width: 75%;
+}
+
+pre {
+	display: inline-block;
+	font-family: monospace;
+	font-size: 11pt;
+	background: var(--mgeg00);
+	border: 1px solid var(--mgeg10);
+	margin: 0;
+	padding: 0.25em 0.5em;
+}
+
+dt {
+	font-size: 18pt;
+}
+
+dd {
+	display: block;
+	margin-inline-start: 0px;
+}
+dd ul li {
+	list-style-type: decimal;
+}
 /* FLEX & LAYOUT DIRECTIVES ============ */
 
 html {
@@ -46,131 +149,24 @@ main {
 footer {
 	flex-shrink: 0;
 }
-
-
-
-
-
-/* APPEARANCE DIRECTIVES ============ */
-
-* {
-	font-family: 'Hind Guntur', sans-serif;
-	line-height: 1.5;
-	font-size: 13pt;
+/* Hide the button that opens the nav when it's hidden. */
+main>div[role="button"] {
+	display: none;
 }
 
-body {
-	background-color: #fff;
-	color: #230612ff;
-	margin: 0;
-}
-
-footer {
-	background: #0f5257ff;
-	padding: 2em 1em;
-	color: #dcf0f0ff;
-}
-
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Mada', sans-serif; 
-	color: #0f5257ff;
-	margin: 0;
-}
-header {
-	padding: 1em 1em 0.5em 1em;
-	background: #26a96cff;
-}
-header svg {
-	max-height: 6em;
-}
-header svg text {
-	font-family: 'Sevillana', sans-serif; 
-	color: white;
-	fill: white;
-}
-
-h2 {
-	font-size: 4em;
-	line-height: 1.1;
-	background-color: #85e4eaff;
-	display: table;
-	margin: 0.25em 0 0.2em -0.4em;
-	padding: 0.25em 0.25em 1em 0.35em;
-	border-radius: 0.5em;
-}
-
-time {
-	font-weight: bold;
-	display: block;
-	border-top: 1px dotted black;
-	padding: 0.4em 0;
-	margin-top: -3.5em;
-	position: absolute;
-	width: 100%;
-}
-
-a {
-	color: #1167d0ff;
-}
-
-nav {
-	text-align: right;
-	padding-top: 1.6em;
-}
-
-nav p {
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-nav p a {
+main>div[role="button"] > a {
+	background: var(--mgeg00);
+	color: var(--page-fg);
+	padding: 0.25em 1em 0em;
+	border-radius: 3px;
 	text-decoration: none;
-	color: #0f5257ff;
 }
 
-nav p a:hover, nav p a:focus {
+main>div[role="button"] > a:hover,
+main>div[role="button"] > a:focus {
+	color: var(--mgeg00);
+	background: var(--page-fg);
 	text-decoration: underline;
-}
-
-nav ul li {
-	list-style-type: none;
-	margin-bottom: 0.5em;
-	color: #0f5257ff;
-}
-
-article {
-	position: relative;
-	margin-top: 2em;
-	margin-bottom: 6em;
-}
-
-img {
-	max-width: 75%;
-}
-
-pre {
-	display: inline-block;
-	font-family: monospace;
-	font-size: 11pt;
-	background: #eee;
-	border: 1px solid #ddd;
-	margin: 0;
-	padding: 0.25em 0.5em;
-}
-
-dt {
-	font-size: 18pt;
-}
-
-dd {
-	display: block;
-	margin-inline-start: 0px;
-}
-dd ul li {
-	list-style-type: decimal;
-}
-
-@media only screen and (max-width: 1100px) {
 }
 
 /* Smallest screen size (800px and less) */
@@ -182,10 +178,53 @@ dd ul li {
 		margin-left: 4%;
 		max-width: 92%;
 	}
+
+	/* Hide the button that opens the nav when it's hidden. */
+	main>div[role="button"] {
+		display: block;
+	}
+
+	/* Hide the <nav> but also tweak its appearance for small screens: full page, left aligned, etc. */
 	nav {
 		display: none;
+		text-align: inherit;
+		max-width: initial;
+		min-width: initial;
+		position: relative;
+		margin-left: 4%;
+		margin-right: 4%;
 	}
+
+	nav ul {
+		padding-inline-start: 0;
+	}
+}:root {
+	/* Colour palette */
+	--dark-purple: #230612ff;
+	--midnight-green-eagle-green: #0f5257ff;
+	--white: #ffffffff;
+	--jade: #26a96cff;
+	--celtic-blue: #1167d0ff;
+	--medium-aquamarine: #16db93ff;
+	--icterine: #fff45cff;
+
+    /* Greyscales */
+    --mgeg00: #eee;
+	--mgeg10: #dcd7d9ff;
+	--mgeg20: #85e4eaff;
+	--mgeg30: #2ed0dcff;
+	--mgeg40: #0f5257ff;
+
+    /* Colour palette applied to sematic constants */
+    --head-bg: var(--jade);
+    --head-fg: var(--white);
+	--page-bg: var(--white);
+	--page-fg: var(--dark-purple);
+	--page-hd: var(--midnight-green-eagle-green);
+	--page-ln: var(--celtic-blue);
+	--foot-bg: var(--midnight-green-eagle-green);
+	--foot-fg: var(--mgeg10);
+	--nav-bg: var(--page-bg);
+	--nav-fg: var(--page-fg);
+	--nav-ln: var(--page-ln);
 }
-
-
-

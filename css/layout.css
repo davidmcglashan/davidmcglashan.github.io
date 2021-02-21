@@ -1,0 +1,33 @@
+
+/* FLEX & LAYOUT DIRECTIVES ============ */
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+body div {
+	flex: 1 0 auto;
+}
+
+nav {
+	max-width: 25%;
+	min-width: 25%;
+	position: sticky;
+	top: 0px;
+	float: left;
+}
+
+main {
+	margin-left: 30%;
+	max-width: 44em;
+}
+
+footer {
+	flex-shrink: 0;
+}

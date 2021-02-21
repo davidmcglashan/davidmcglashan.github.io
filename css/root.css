@@ -1,0 +1,30 @@
+:root {
+	/* Colour palette */
+	--dark-purple: #230612ff;
+	--midnight-green-eagle-green: #0f5257ff;
+	--white: #ffffffff;
+	--jade: #26a96cff;
+	--celtic-blue: #1167d0ff;
+	--medium-aquamarine: #16db93ff;
+	--icterine: #fff45cff;
+
+    /* Greyscales */
+    --mgeg00: #eee;
+	--mgeg10: #dcd7d9ff;
+	--mgeg20: #85e4eaff;
+	--mgeg30: #2ed0dcff;
+	--mgeg40: #0f5257ff;
+
+    /* Colour palette applied to sematic constants */
+    --head-bg: var(--jade);
+    --head-fg: var(--white);
+	--page-bg: var(--white);
+	--page-fg: var(--dark-purple);
+	--page-hd: var(--midnight-green-eagle-green);
+	--page-ln: var(--celtic-blue);
+	--foot-bg: var(--midnight-green-eagle-green);
+	--foot-fg: var(--mgeg10);
+	--nav-bg: var(--page-bg);
+	--nav-fg: var(--page-fg);
+	--nav-ln: var(--page-ln);
+}

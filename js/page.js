@@ -15,7 +15,7 @@ fetch( 'sidebar.json' )
 	.then( response => response.json() )
  	.then(
  		function( articles ) {
-			let nav = document.getElementById("nav");
+			let nav = document.getElementById("nav_ul");
 			articles.forEach( function( obj ) {
 				let li = document.createElement("li");
 				nav.appendChild( li );
@@ -49,7 +49,7 @@ if ( loadRoll ) {
 	.then( response => response.json() )
  	.then(
  		function( articles ) {
-			let nav = document.getElementById("nav");
+			let nav = document.getElementById("nav_ul");
 			articles.forEach( function( obj ) {
 				parse( obj.article )
 			});
