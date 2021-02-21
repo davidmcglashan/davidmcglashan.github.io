@@ -23,9 +23,9 @@ python3 $BASE/compile.py
 # TODO this minifier requires python v2 and it doesn't work with modern
 # javascript. 
 echo 'restoring javascript ...'
-cat $BASE/*.js > $BASE/docs/js.js
+cat $BASE/js/*.js > $BASE/docs/js.js
 #python $BASE/minify.py > $BASE/docs/js.js
 #rm $BASE/temp.js
 
 echo 'restoring CSS ...'
-cp $BASE/css.css $BASE/docs/css.css
+cat $BASE/css/*.css > $BASE/docs/css.css

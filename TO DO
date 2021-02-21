@@ -4,6 +4,16 @@ TO DO
 BUGS
 - hyperlinks (prob. img too!) without | don't work
 
+CSS
+- multiple input files, one for layout, one for appearance, constants, etc.
+- concatenate in build script
+- :root{} with variables
+  - change the value, not the variable
+  - https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/
+
+NAV
+- on smaller screens does what?
+
 SIDEBAR
 - sticky
   - about
@@ -15,9 +25,8 @@ SIDEBAR
   - github
   - linked in
 
-Make 404 into _404 and use the underscore as an excluder in the sidebar.
-
-Deal with more than 10 pages!
+FOOTER
+- can we do better? Don't know what!
 
 a11y testing
 
@@ -26,16 +35,3 @@ JS
 - separate files (e.g. parser/roll/page) minifed together
 - minify: optionable in build.sh for debug purposes
 - hyperlinks() and images() are similar and should be refactored.
-
-CSS
-- LESS compiler for the CSS
-  - multiple input files, one for layout, one for appearance, constants, etc.
-- footer appearance
-- make the H1 smaller on iPhone screens
-
-NAV
-- on smaller screens does what?
-
-PARSER
-{noparse} toggles the parser on/off for lines
-{pre}
