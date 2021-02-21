@@ -20,9 +20,15 @@ main>div[role="button"] > a:focus {
 
 /* Smallest screen size (800px and less) */
 @media only screen and (max-width: 800px) {
+	/* Reduce the size of the heading */
+	header h1 {
+		font-size: 36pt;
+	}
+
 	h2 {
 		font-size: 3em;
 	}
+
 	main {
 		margin-left: 4%;
 		max-width: 92%;

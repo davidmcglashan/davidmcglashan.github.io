@@ -7,7 +7,7 @@ On my Macbook Air it looks tired. Might be the colours; might be the fonts. It's
 
 So I made it look like this ...
 
-$assets/20210123-hacker-news-css.png|Hacker News CSS$
+$assets/20210123-hacker-news-css.png|Screenshot of Hacker News CSS in action$
 
 You can do so too: the ^stylesheet is on github|https://github.com/davidmcglashan/custom-css/blob/main/hacker-news-y-combinator.css^. It probably looks pony on anything other than a modern Mac running Safari since that's the only platform it's been tested on. But, hey! It's a public repo; send me a pull request.
 
