@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"forEach"
+			],
+			[
+				"cl",
+				"calendar"
+			],
+			[
+				"c",
+				"calendar"
+			],
+			[
+				"set",
+				"settings"
+			],
+			[
 				"pase",
 				"parseOff"
 			],
@@ -43,7 +59,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1139,
+				"buffer_size": 1186,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -52,7 +68,7 @@
 			"file": "parser.js",
 			"settings":
 			{
-				"buffer_size": 5285,
+				"buffer_size": 5353,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -61,7 +77,16 @@
 			"file": "page.js",
 			"settings":
 			{
-				"buffer_size": 1071,
+				"buffer_size": 1623,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "calendar.js",
+			"settings":
+			{
+				"buffer_size": 1102,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -144,13 +169,42 @@
 			}
 		},
 		{
+			"file": "articles/20210206.txt",
+			"settings":
+			{
+				"buffer_size": 126,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "Image support means I can share sketches and stuff"
+			}
+		},
+		{
+			"file": "articles/20210213.txt",
+			"settings":
+			{
+				"buffer_size": 563,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "Links without content ..."
+			}
+		},
+		{
 			"file": "roll.py",
 			"settings":
 			{
-				"buffer_size": 529,
+				"buffer_size": 530,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "import glob"
+			}
+		},
+		{
+			"file": "compile.py",
+			"settings":
+			{
+				"buffer_size": 2253,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -163,31 +217,38 @@
 			}
 		},
 		{
-			"file": "minify.py",
+			"file": "css.css",
 			"settings":
 			{
-				"buffer_size": 109,
+				"buffer_size": 2462,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "settings.json",
+			"settings":
+			{
+				"buffer_size": 241,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "{"
 			}
 		},
 		{
 			"file": "build.sh",
 			"settings":
 			{
-				"buffer_size": 791,
+				"buffer_size": 717,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "TO DO\n-----\n\nBUGS\n- hyperlinks (prob. img too!) without | don't work\n\nSIDEBAR\n- sticky\n  - about\n  - software\n- recent\n- trivial\n  - tags cheat sheet\n  - twitter\n  - github\n  - linked in\n\nMake 404 into _404 and use the underscore as an excluder in the sidebar.\n\na11y testing\n\nJS\n- do an ajax/parse() in <a> tags and make an SPA-like site\n- separate files (e.g. parser/roll/page) minifed together\n- minify: optionable in build.sh for debug purposes\n- hyperlinks() and images() are similar and should be refactored.\n\nCSS\n- LESS compiler for the CSS\n  - multiple input files, one for layout, one for appearance, constants, etc.\n- footer appearance\n- make the H1 smaller on iPhone screens\n\nNAV\n- on smaller screens does what?\n\nPARSER\n{noparse} toggles the parser on/off for lines\n{pre}",
 			"file": "TO DO",
-			"file_size": 778,
-			"file_write_time": 132559635163502190,
 			"settings":
 			{
-				"buffer_size": 781,
+				"buffer_size": 812,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "TO DO"
@@ -242,6 +303,8 @@
 	},
 	"file_history":
 	[
+		"/Users/david/Web/davidmcglashan.github.io/build.py",
+		"/Users/david/Web/davidmcglashan.github.io/minify.py",
 		"/Users/david/Web/davidmcglashan.github.io/css.css",
 		"/Users/david/Web/davidmcglashan.github.io/roll.js",
 		"/Users/david/Library/Application Support/Sublime Text 3/Local/Session.sublime_session",
@@ -296,7 +359,7 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -305,15 +368,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1139,
+						"buffer_size": 1186,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								856,
-								856
+								993,
+								993
 							]
 						],
 						"settings":
@@ -324,7 +387,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -333,15 +396,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5285,
+						"buffer_size": 5353,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4594,
-								4594
+								3373,
+								3418
 							]
 						],
 						"settings":
@@ -353,7 +416,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -362,15 +425,44 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1071,
+						"buffer_size": 1623,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1032,
-								1032
+								672,
+								672
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "calendar.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								242,
+								242
 							]
 						],
 						"settings":
@@ -386,7 +478,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "articles/404.txt",
 					"semi_transient": false,
 					"settings":
@@ -411,11 +503,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "articles/20201216.txt",
 					"semi_transient": false,
 					"settings":
@@ -439,11 +531,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "articles/20210104.txt",
 					"semi_transient": false,
 					"settings":
@@ -468,11 +560,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "articles/20210106.txt",
 					"semi_transient": false,
 					"settings":
@@ -497,11 +589,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "articles/20201226.txt",
 					"semi_transient": false,
 					"settings":
@@ -526,11 +618,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "articles/20201228.txt",
 					"semi_transient": false,
 					"settings":
@@ -554,11 +646,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "articles/20210123.txt",
 					"semi_transient": false,
 					"settings":
@@ -583,11 +675,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "articles/20210124.txt",
 					"semi_transient": false,
 					"settings":
@@ -599,8 +691,8 @@
 						"selection":
 						[
 							[
-								1915,
-								1915
+								267,
+								330
 							]
 						],
 						"settings":
@@ -612,24 +704,82 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "roll.py",
+					"buffer": 12,
+					"file": "articles/20210206.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 529,
+						"buffer_size": 126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								529
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Image support means I can share sketches and stuff",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "articles/20210213.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Links without content ...",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "roll.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
 							]
 						],
 						"settings":
@@ -642,24 +792,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "sidebar.py",
+					"buffer": 15,
+					"file": "compile.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 514,
+						"buffer_size": 2253,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								271,
-								271
+								2238,
+								2238
 							]
 						],
 						"settings":
@@ -671,35 +821,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "minify.py",
+					"buffer": 16,
+					"file": "sidebar.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 109,
+						"buffer_size": 514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								74,
-								74
+								503,
+								510
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -709,20 +860,78 @@
 			"sheets":
 			[
 				{
-					"buffer": 14,
-					"file": "build.sh",
+					"buffer": 17,
+					"file": "css.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 791,
+						"buffer_size": 2462,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								367,
-								367
+								1735,
+								1735
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "settings.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "build.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 717,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								680,
+								680
 							]
 						],
 						"settings":
@@ -733,24 +942,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 20,
 					"file": "TO DO",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 781,
+						"buffer_size": 812,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								201,
-								201
+								291,
+								291
 							]
 						],
 						"settings":
@@ -762,7 +971,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -838,7 +1047,7 @@
 		[
 			[
 				"",
-				"~/Code/python/advent of code 2020/advent of code.sublime-project"
+				"~/Documents/notes.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -852,7 +1061,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

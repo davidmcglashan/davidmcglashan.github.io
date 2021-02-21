@@ -1,0 +1,18 @@
+{
+	"from": "articles",
+	"exclude": [
+		"404.txt"
+	],
+	"sidebar": {
+		"length": 5,
+		"file": "docs/sidebar.json"
+	},
+	"roll": {
+		"length": 20,
+		"file": "docs/roll.json"
+	},
+	"calendar": {
+		"start": 2020,
+		"file": "docs/calendar.json"
+	}
+}

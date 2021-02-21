@@ -134,7 +134,7 @@ nav p a:hover, nav p a:focus {
 
 nav ul li {
 	list-style-type: none;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 	color: #0f5257ff;
 }
 
@@ -156,6 +156,18 @@ pre {
 	border: 1px solid #ddd;
 	margin: 0;
 	padding: 0.25em 0.5em;
+}
+
+dt {
+	font-size: 18pt;
+}
+
+dd {
+	display: block;
+	margin-inline-start: 0px;
+}
+dd ul li {
+	list-style-type: decimal;
 }
 
 @media only screen and (max-width: 1100px) {
