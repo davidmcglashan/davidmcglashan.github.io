@@ -1,0 +1,25 @@
+body {
+	font-family: 'Jost', sans-serif;
+	margin-top: 4em;
+	margin-left: 35%;
+	margin-right: 20%;
+	max-width: 25em;
+}
+h1 {
+	font-size: 4em;
+}
+div {
+	position: relative;
+}
+img {
+	position: absolute;
+	border-radius: 50%;
+	width: 10em;
+	left: -13em;	
+}
+hr {
+	margin: 4em -3em 4em -6em;
+	border: none;
+	background: #aaa;
+	height: 1px;
+}
