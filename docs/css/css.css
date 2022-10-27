@@ -1,12 +1,17 @@
 body {
 	font-family: 'Jost', sans-serif;
-	margin-top: 4em;
-	margin-left: 40%;
-	margin-right: 20%;
-	max-width: 25em;
+	position: absolute;
+	left: 50%;
+	margin-top: 4rem;
+	margin-left: -20rem;
+	max-width: 40rem;
 }
 h1 {
 	font-size: 4em;
+	font-weight: normal;
+}
+h1,p {
+	margin-left: 12rem;
 }
 article,div {
 	position: relative;
@@ -15,23 +20,21 @@ article {
 	min-height: 5.5em;
 }
 hr {
-	margin: 2em 0em 2em -8em;
+	margin: 2rem 0rem 2rem 6rem;
 	border: none;
 	background: #ddd;
 	height: 1px;
 }
 p {
-	margin-top: 0.5em;
+	margin-top: 0;
 }
 .lede {
 	font-size: 1.25em;
-	margin: 0;
 }
 a.roundel {
 	position: absolute;
-	left: -13em;	
+	margin-left: 0;	
 	border-radius: 1.35em;
-	display: block;
 	border: 4px solid transparent;
 	padding: 0.25em;
 }
@@ -40,23 +43,27 @@ a.roundel:focus,a.roundel:hover {
 }
 a.roundel>img {
 	border-radius: 50%;
-	width: 10em;
+	width: 10rem;
 }
 a.roundel:hover>img {
 	border-radius: 1em;
 }
 div.roll {
-	margin-left: -0.5em;
+	margin-left: 11.5rem;
 	margin-top: 1em;
 }
 div.roll a {
-	border: 4px solid transparent;
+	border-style: solid;
+	border-width: 4px;
+	border-color: transparent;
 	border-radius: 0.75em;
 	padding: 0.25em;
 	display: inline-block;
+	margin-left: 0;
 }
 div.roll a:focus,div.roll a:hover {
-	border: 4px solid #36c;
+	border-width: 4px;
+	border-color: #36c;
 }
 div.roll a img,div.roll a svg {
 	width: 4em;
@@ -80,6 +87,33 @@ article a img {
 	border: 4px solid transparent;
 	padding: 0.25em;
 	position: absolute;
-	left: -8em;	
-	width: 5em;
+	left: 5rem;	
+	width: 5rem;
+}
+div.roll a.external {
+	border-style: dotted;
+}
+
+div.folded {
+    max-height: 0;
+    overflow: hidden;
+}
+div.folded.open {
+    max-height: 10000px;
+    transition: max-height 2s ease-in;
+}
+
+div.gamut ul {
+	position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    background: #f8f8f8;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    list-style: none;
+}
+div.gamut img {
+	width: 100%;
 }
