@@ -114,6 +114,32 @@ div.gamut ul {
     border-radius: 1rem;
     list-style: none;
 }
+.gamut ul li a {
+	display: block;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+}
+.gamut ul li a:hover,.gamut ul li a:focus {
+    background: #666;
+    color: #fff;
+    text-decoration: none;
+}
+.gamut ul li a.selected {
+    background: #999;
+    color: #fff;
+}
 div.gamut img {
 	width: 100%;
+}
+div.gamut svg {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.gamut-shape {
+	stroke: #333;
+	stroke-width: 4px;
+	stroke-dasharray: 4;
+	fill: none;
+	display: none;
 }

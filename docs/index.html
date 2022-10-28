@@ -41,17 +41,36 @@
 				It's so simple!
 			</p>
 			<div class="gamut">
-				<img src="img/gamut.jpeg">
+					<img src="img/gamut.jpg">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 836" width="100%" height="100%">
+						<circle class="gamut-shape" id="gamut-red" cx="650" cy="520" r="40"></circle>
+						<ellipse class="gamut-shape" id="gamut-orange" cx="480" cy="-50" rx="290" ry="75" transform="rotate(45)"></ellipse>
+						<circle class="gamut-shape" id="gamut-yellow" cx="380" cy="450" r="20"></circle>
+						<circle class="gamut-shape" id="gamut-green" cx="230" cy="320" r="100"></circle>
+						<circle class="gamut-shape" id="gamut-blue" cx="300" cy="610" r="100"></circle>
+						<circle class="gamut-shape" id="gamut-purple" cx="450" cy="580" r="30"></circle>
+						<g class="gamut-shape" id="gamut-grey">
+							<circle cx="240" cy="470" r="80"></circle>
+							<circle cx="420" cy="500" r="30"></circle>
+						</g>
+						<circle class="gamut-shape" id="gamut-mystery" cx="560" cy="530" r="40"></circle>
+					</svg>
 				<ul>
-					<li><a href="#" onclick="gamut(0);return false;">Red</a></li>
-					<li><a href="#" onclick="gamut(1);return false;">Orange</a></li>
-					<li><a href="#" onclick="gamut(2);return false;">Yellow</a></li>
-					<li><a href="#" onclick="gamut(3);return false;">Green</a></li>
-					<li><a href="#" onclick="gamut(4);return false;">Blue</a></li>
-					<li><a href="#" onclick="gamut(5);return false;">Indigo</a></li>
-					<li><a href="#" onclick="gamut(6);return false;">Violet</a></li>
+					<li><a id="link-red" href="#" onclick="gamut('red');return false;">Red</a></li>
+					<li><a id="link-orange" href="#" onclick="gamut('orange');return false;">Orange</a></li>
+					<li><a id="link-yellow" href="#" onclick="gamut('yellow');return false;">Yellow</a></li>
+					<li><a id="link-green" href="#" onclick="gamut('green');return false;">Green</a></li>
+					<li><a id="link-blue" href="#" onclick="gamut('blue');return false;">Blue</a></li>
+					<li><a id="link-purple" href="#" onclick="gamut('purple');return false;">Purple</a></li>
+					<li><a id="link-grey" href="#" onclick="gamut('grey');return false;">Grey</a></li>
+					<li><a id="link-mystery" href="#" onclick="gamut('mystery');return false;">Mystery</a></li>
 				</ul>
 			</div>
+			<p>
+				Intellectually, I know that blue gives way to red via purple along the straight edge at the bottom of the gamut. But my eyes and brain simply wouldn't register those colours out of context
+			</p>
+			<p>
+				"Mystery" is a murky orange-brown with enough blue to be purple. I'm not confident enough to give it a better label than that.
 		</div>
 	</article>
 	<hr>
@@ -92,11 +111,28 @@
 	</article>
 	<script type="text/javascript">
 		function unfold(e) {
-			var elem = document.getElementById(e)
-			elem.classList.add("open")
+			var elem = document.getElementById(e);
+			elem.classList.add("open");
 		}
 		function gamut(g) {
-			
+			// Hide all the gamut shapes
+			document.querySelectorAll(".gamut-shape").forEach( function(e,i,a) {
+				e.style.display = 'none';
+			});
+			// Just show the one that's selected
+			var elem = document.getElementById('gamut-'+g);
+			if ( elem !== null ) {
+				elem.style.display = 'inline';
+			}
+			// Unselect all the menu options
+			document.querySelectorAll(".selected").forEach( function(e,i,a) {
+				e.classList.remove("selected")
+			});
+			// Select the link
+			elem = document.getElementById('link-'+g);
+			if ( elem !== null ) {
+				elem.classList.add("selected")
+			}
 		}
 	</script>
 </body>
