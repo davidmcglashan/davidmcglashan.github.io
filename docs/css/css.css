@@ -103,28 +103,27 @@ div.folded.open {
     transition: max-height 2s ease-in;
 }
 
-div.gamut ul {
-	position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 100;
+#colourblind ul {
     background: #f8f8f8;
     padding: 1rem;
+    margin-left: 12rem;
     border: 1px solid #ddd;
     border-radius: 1rem;
     list-style: none;
+	display: flex;
+	flex-flow: wrap;
 }
-.gamut ul li a {
+#colourblind ul li a {
 	display: block;
     padding: 0.25rem 1rem;
     border-radius: 0.25rem;
 }
-.gamut ul li a:hover,.gamut ul li a:focus {
+#colourblind ul li a:hover,#colourblind ul li a:focus {
     background: #666;
     color: #fff;
     text-decoration: none;
 }
-.gamut ul li a.selected {
+#colourblind ul li a.selected {
     background: #999;
     color: #fff;
 }
@@ -174,5 +173,8 @@ div.gamut svg {
 	}
 	hr {
 		margin: 1rem 0rem 1rem 6rem;
+	}
+	#colourblind ul {
+		margin-left: 2rem;
 	}
 }
