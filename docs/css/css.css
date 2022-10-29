@@ -149,9 +149,9 @@ div.gamut svg {
 	body {
 		position: relative;
 		margin-top: 4rem;
-		margin-left: -20rem;
-	    left: 20rem;
-    	max-width: 100%;
+		margin-left: 0;
+	    left: 0;
+    	max-width: 95%;
 	}
 	a.roundel>img {
 		width: 8rem;
