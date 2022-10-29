@@ -151,7 +151,28 @@ div.gamut svg {
 		margin-top: 4rem;
 		margin-left: -20rem;
 	    left: 20rem;
-    	max-width: 95%;
-    	font-size: 120%;
+    	max-width: 100%;
+	}
+	a.roundel>img {
+		width: 8rem;
+	}
+	.lede {
+		margin-left: 10rem;
+	}
+	h1,p,article .lede {
+		margin-left: 8rem;
+	}
+	article a img {
+		left: 1rem;
+	}
+	div.roll {
+		margin-left: 9.5rem;
+	}
+	div.roll a img,div.roll a svg {
+		width: 3em;
+		height: 3em;
+	}
+	hr {
+		margin: 1rem 0rem 1rem 6rem;
 	}
 }
