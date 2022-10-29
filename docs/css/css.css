@@ -143,3 +143,15 @@ div.gamut svg {
 	fill: none;
 	display: none;
 }
+
+/* Tweak the body margins and jazz on small screens */
+@media only screen and (max-width: 768px) {
+	body {
+		position: relative;
+		margin-top: 4rem;
+		margin-left: -20rem;
+	    left: 20rem;
+    	max-width: 95%;
+    	font-size: 120%;
+	}
+}
