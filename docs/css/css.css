@@ -44,6 +44,7 @@ a.roundel:focus,a.roundel:hover {
 a.roundel>img {
 	border-radius: 50%;
 	width: 10rem;
+	display: block;
 }
 a.roundel:hover>img {
 	border-radius: 1em;
@@ -58,8 +59,9 @@ div.roll a {
 	border-color: transparent;
 	border-radius: 0.75em;
 	padding: 0.25em;
-	display: inline-block;
 	margin-left: 0;
+	height: 4em;
+	display: inline-block;
 }
 div.roll a:focus,div.roll a:hover {
 	border-width: 4px;
@@ -106,7 +108,7 @@ div.folded.open {
 #colourblind ul {
     background: #f8f8f8;
     padding: 1rem;
-    margin-left: 12rem;
+	margin-left: 2rem;
     border: 1px solid #ddd;
     border-radius: 1rem;
     list-style: none;
@@ -167,14 +169,14 @@ div.gamut svg {
 	div.roll {
 		margin-left: 9.5rem;
 	}
+	div.roll a {
+		height: 3rem;
+	}
 	div.roll a img,div.roll a svg {
 		width: 3em;
 		height: 3em;
 	}
 	hr {
 		margin: 1rem 0rem 1rem 6rem;
-	}
-	#colourblind ul {
-		margin-left: 2rem;
 	}
 }
