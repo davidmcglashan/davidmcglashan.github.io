@@ -30,6 +30,7 @@ p {
 }
 img.image {
 	width: 100%;
+	margin: 1em 0 0;
 }
 .lede {
 	font-size: 1.25em;
