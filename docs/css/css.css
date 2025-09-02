@@ -35,6 +35,9 @@ img.image {
 .lede {
 	font-size: 1.25em;
 }
+.strap {
+	font-weight: 800;
+}
 a.roundel {
 	position: absolute;
 	margin-left: 0;	
@@ -96,6 +99,9 @@ article a img {
 	left: 5rem;	
 	width: 5rem;
 }
+article img.spanning {
+	width: 100%;
+}
 div.roll a.external {
 	border-style: dotted;
 }
@@ -105,8 +111,12 @@ div.folded {
     overflow: hidden;
 }
 div.folded.open {
-    max-height: 10000px;
-    transition: max-height 2s ease-in;
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in-out;
+}
+div.folded.closed {
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
 }
 
 #colourblind ul {
@@ -118,10 +128,11 @@ div.folded.open {
     list-style: none;
 	display: flex;
 	flex-flow: wrap;
+	justify-content: center;
 }
 #colourblind ul li a {
 	display: block;
-    padding: 0.25rem 1rem;
+    padding: 0.20rem 0.75rem;
     border-radius: 0.25rem;
 }
 #colourblind ul li a:hover,#colourblind ul li a:focus {

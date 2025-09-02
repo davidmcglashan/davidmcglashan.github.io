@@ -18,6 +18,7 @@
 			I'm David. I live in Weston-super-Mare in the UK with my family. I work as a Product Owner, mostly seriously.
 		</p>
 		<div class="roll">
+			<a class="external" href="https://www.instagram.com/mcglashan_david/"><img src="img/instagram_logo_2016.svg"></a>
 			<a class="external" href="https://www.linkedin.com/in/mcglashan-david"><svg xmlns="http://www.w3.org/2000/svg" height="72" viewBox="0 0 72 72" width="72"><g fill="none" fill-rule="evenodd"><path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#007EBB"/><path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFF"/></g></svg></a>
 			<a class="external" href="https://github.com/davidmcglashan"><img src="img/github.png"></a>
 		</div>
@@ -32,12 +33,12 @@
 				I am colour blind, and this amuses people.
 			</p>
 		</a>
-		<p>
+		<p class="strap">
 			Not sure if protan or deutan &hellip;
 		</p>
-		<div class="folded" id="colourblind">
+		<div class="folded closed" id="colourblind">
 			<p>
-				See the world as I do with this handy tool. Choose a colour from the list and I'll point to a corresponding area of colour on the gamut. Simple.
+				I am red-green colourblind. See the world as I do with this handy tool. Choose a colour from the list and I'll point to a corresponding area of colour on the gamut. Simple.
 			</p>
 			<ul>
 				<li><a id="link-red" href="#" onclick="gamut('red');return false;">Red</a></li>
@@ -78,39 +79,58 @@
 	</article>
 	<hr>
 	<article>
-		<a href="javascript:open('astrarisk.js/game.html','astrarisk','left=100,top=100,width=800,height=512');">
+		<a href="#" onclick="unfold('astrarisk');return false;">
 			<img src="img/astrarisk_thumb.png">
 			<p class="lede">
 				I made Astrarisk.js
 			</p>
 		</a>
-		<p>
+		<p class="strap">
 			Formerly an iOS game, now available in Web browsers everywhere.
 		</p>
+		<div class="folded closed" id="astrarisk">
+			<p>
+				A long, long time ago, I made a game for iOS called Astrarisk. This would have been in early 2010 when the device <i>du jour</i> was the iPhone 3GS, however the game itself was based on an even earlier program from the times when computer magazines printed the BASIC source code for you to type in and run. The gimmick behind Astrarisk was that it fit into one line of BBC BASIC on the old Model B. 
+			</p>
+			<p>
+				It was the source of much enjoyment at college in the early 1990s when we had accounts on the RM Nimbus machines which had excellent BBC BASIC emulators. In 1996, now at university, I made a version out of Java applets for some early version of Netscape on the HP-UX workstations there.
+			</p>
+			<p>
+				The version presented here is (at least) the fourth version I've written. The original author, and all prior versions by me, are <a href="https://www.google.com/search?q=astrarisk+ios+mcglashan&client=safari">lost to the mists of time</a>, though I may have the iOS source code on an old backup drive <i>somewhere</i> &hellip;
+			</p>
+			<p>
+				It had a pretty epic green icon, as you can see:
+			</p>
+			<p>
+				<img src="img/astrarisk_original.jpg">
+			</p>
+			<p>
+				Nowadays you can <a href="javascript:open('astrarisk.js/game.html','astrarisk','left=100,top=100,width=800,height=512');">play it right here on the web</a> (opens a wee popup window) and if you're curious, the source code is on <a href="https://github.com/davidmcglashan/astrarisk.js">Github</a>.
+			</p>
+
+			
+		</div>
 	</article>
 	<hr>
 	<article>
-		<a href="#">
-			<img src="img/cat_thumb.jpg">
+		<a href="#" onclick="unfold('stringhorse');return false;">
+			<img src="img/horse.png">
 			<p class="lede">
-				There are electric guitars &hellip;
+				I made Stringhorse
 			</p>
 		</a>
 		<p>
-			&hellip; and there is the Telecaster. I built this one.
+			Try it at <a href="https://stringhorse.mcglashan.net/">https://stringhorse.mcglashan.net/</a>
 		</p>
-	</article>
-	<hr>
-	<article>
-		<a href="#">
-			<img src="img/cat_thumb.jpg">
-			<p class="lede">
-				I like Minecraft.
+		<div class="folded closed" id="stringhorse">
+			<p>
+				I frequently find myself running into the same class of text manipulation problem both at work and when doing computer stuff in my spare time. Given an arbitrary text source, how do I quickly sort it? Or extract the bits I'm interested in? Or turn a list of Jira ticket IDs into hyperlinks I can click on?
 			</p>
-		</a>
-		<p>
-			Not sure if protan or deutan &hellip;
-		</p>
+			<p>
+				On a POSIX system one would naturally tend to solving these problems with tools like sed, awk, and grep, or with Perl or Python, and regular expressions. But when I'm already quite deep in a separate problem the last thing I want is more windows on the desktop. I'm already working, I don't need more clutter, so stringhorse runs in a browser tab. I paste in the source, quickly build the recipe, and see the output in real time.
+			</p>
+			<img src="img/stringhorse.png" class="spanning">
+		</div>
 	</article>
 	<script type="text/javascript">
 		function photo(e) {
@@ -124,7 +144,8 @@
 		}
 		function unfold(e) {
 			var elem = document.getElementById(e);
-			elem.classList.add("open");
+			elem.classList.toggle("open");
+			elem.classList.toggle("closed");
 		}
 		function gamut(g) {
 			// Hide all the gamut shapes
