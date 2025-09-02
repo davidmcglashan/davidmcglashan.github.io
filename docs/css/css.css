@@ -111,7 +111,7 @@ div.folded {
     overflow: hidden;
 }
 div.folded.open {
-    max-height: 1000px;
+    max-height: 1200px;
     transition: max-height 0.5s ease-in-out;
 }
 div.folded.closed {
