@@ -25,6 +25,9 @@ hr {
 	background: #ddd;
 	height: 1px;
 }
+article hr {
+	margin-left: 12rem;
+}
 p {
 	margin-top: 0;
 }
@@ -160,6 +163,17 @@ div.gamut svg {
 	display: none;
 }
 
+footer ul {
+	margin-left: 12rem;
+    list-style: none;
+	padding-inline-start: 0;
+	color: #666;
+}
+
+footer li {
+	margin-top: 1rem;
+}
+
 /* Tweak the body margins and jazz on small screens */
 @media only screen and (max-width: 768px) {
 	body {
@@ -175,7 +189,7 @@ div.gamut svg {
 	.lede {
 		margin-left: 10rem;
 	}
-	h1,p,article .lede {
+	h1,p,article .lede, footer ul {
 		margin-left: 8rem;
 	}
 	article a img {
