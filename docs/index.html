@@ -11,152 +11,162 @@
 <body>
 	<h1>Hello</h1>
 	<div>
-		<a class="roundel" href="#" onclick="photo('gruffalo');return false;">
-			<img src="img/gruffalo.jpg">
-		</a>
+		<img class="roundel" src="img/gruffalo.jpg">
 		<p class="lede">
-			I'm David. I live in Weston-super-Mare in the UK with my family. I work as a Product Owner, mostly seriously.
+			I'm David. I live in Weston-super-Mare in the UK with my family and a pair of ratbag cats. I work as a Product Owner, mostly seriously.
 		</p>
 		<div class="roll">
 			<a class="external" href="https://www.instagram.com/mcglashan_david/"><img src="img/Instagram_logo_2016.svg"></a>
 			<a class="external" href="https://www.linkedin.com/in/mcglashan-david"><svg xmlns="http://www.w3.org/2000/svg" height="72" viewBox="0 0 72 72" width="72"><g fill="none" fill-rule="evenodd"><path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#007EBB"/><path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFF"/></g></svg></a>
 			<a class="external" href="https://github.com/davidmcglashan"><img src="img/github.png"></a>
-		</div>
-		<div class="folded" id="photo">
+			<a class="external" href="https://wishlist.mcglashan.net/"><img src="img/wishlist.png"></a>
 		</div>
 	</div>
 	<hr>
-	<article>
-		<a href="#" onclick="unfold('colourblind');return false;">
+
+	<nav>
+		<h2>Contents</h2>
+		<ul>
+			<li><a href="#colourblind">I am colour blind, and this amuses people.</a></li>
+			<li><a href="#astrarisk">I made Astrarisk.js</a></li>
+			<li><a href="#stringhorse">Various horses</a></li>
+			<li><a href="#cardgames">Card games</a></li>
+		</ul>
+	</nav>
+	<hr>
+
+	<article id="colourblind">
+		<div class="title">
 			<img src="img/gamut_thumb.jpg">
-			<p class="lede">
-				I am colour blind, and this amuses people.
-			</p>
-		</a>
+			<h2>I am colour blind, and this amuses people.</h2>
+		</div>
 		<p class="strap">
 			Not sure if protan or deutan &hellip;
 		</p>
-		<div class="folded closed" id="colourblind">
-			<p>
-				I am red-green colourblind. See the world as I do with this handy tool. Choose a colour from the list and I'll point to a corresponding area of colour on the gamut. Simple.
-			</p>
-			<ul>
-				<li><a id="link-red" href="#" onclick="gamut('red');return false;">Red</a></li>
-				<li><a id="link-orange" href="#" onclick="gamut('orange');return false;">Orange</a></li>
-				<li><a id="link-yellow" href="#" onclick="gamut('yellow');return false;">Yellow</a></li>
-				<li><a id="link-green" href="#" onclick="gamut('green');return false;">Green</a></li>
-				<li><a id="link-blue" href="#" onclick="gamut('blue');return false;">Blue</a></li>
-				<li><a id="link-purple" href="#" onclick="gamut('purple');return false;">Purple</a></li>
-				<li><a id="link-grey" href="#" onclick="gamut('grey');return false;">Grey</a></li>
-				<li><a id="link-mystery" href="#" onclick="gamut('mystery');return false;">Mystery</a></li>
-			</ul>
-			<div class="gamut">
-				<img src="img/gamut.jpg">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 836" width="100%" height="100%">
-					<circle class="gamut-shape" id="gamut-red" cx="650" cy="520" r="40"></circle>
-					<ellipse class="gamut-shape" id="gamut-orange" cx="480" cy="-50" rx="290" ry="75" transform="rotate(45)"></ellipse>
-					<circle class="gamut-shape" id="gamut-yellow" cx="380" cy="450" r="20"></circle>
-					<circle class="gamut-shape" id="gamut-green" cx="230" cy="320" r="100"></circle>
-					<circle class="gamut-shape" id="gamut-blue" cx="300" cy="610" r="100"></circle>
-					<circle class="gamut-shape" id="gamut-purple" cx="450" cy="580" r="30"></circle>
-					<g class="gamut-shape" id="gamut-grey">
-						<circle cx="240" cy="470" r="80"></circle>
-						<circle cx="420" cy="500" r="30"></circle>
-					</g>
-					<circle class="gamut-shape" id="gamut-mystery" cx="560" cy="530" r="40"></circle>
-				</svg>
-			</div>
-			<p>
-				Intellectually, I know that blue gives way to red via purple along the straight edge at the bottom of the gamut. But my eyes and brain simply wouldn't register those colours out of context
-			</p>
-			<p>
-				"Mystery" is a murky orange-brown with enough blue to be grey/purple/pink. I'm not confident enough to give it a better label than that.
-			</p>
-			<p>
-				Life is an adventure &hellip;
-			</p>
+		<p>
+			I am red-green colourblind. See the world as I do with this handy tool. Choose a colour from the list and I'll point to a corresponding area of colour on the gamut. Simple.
+		</p>
+		<ul>
+			<li><a id="link-red" href="#" onclick="gamut('red');return false;">Red</a></li>
+			<li><a id="link-orange" href="#" onclick="gamut('orange');return false;">Orange</a></li>
+			<li><a id="link-yellow" href="#" onclick="gamut('yellow');return false;">Yellow</a></li>
+			<li><a id="link-green" href="#" onclick="gamut('green');return false;">Green</a></li>
+			<li><a id="link-blue" href="#" onclick="gamut('blue');return false;">Blue</a></li>
+			<li><a id="link-purple" href="#" onclick="gamut('purple');return false;">Purple</a></li>
+			<li><a id="link-grey" href="#" onclick="gamut('grey');return false;">Grey</a></li>
+			<li><a id="link-mystery" href="#" onclick="gamut('mystery');return false;">Mystery</a></li>
+		</ul>
+		<div class="gamut">
+			<img src="img/gamut.jpg">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 836" width="100%" height="100%">
+				<circle class="gamut-shape" id="gamut-red" cx="650" cy="520" r="40"></circle>
+				<ellipse class="gamut-shape" id="gamut-orange" cx="480" cy="-50" rx="290" ry="75" transform="rotate(45)"></ellipse>
+				<circle class="gamut-shape" id="gamut-yellow" cx="380" cy="450" r="20"></circle>
+				<circle class="gamut-shape" id="gamut-green" cx="230" cy="320" r="100"></circle>
+				<circle class="gamut-shape" id="gamut-blue" cx="300" cy="610" r="100"></circle>
+				<circle class="gamut-shape" id="gamut-purple" cx="450" cy="580" r="30"></circle>
+				<g class="gamut-shape" id="gamut-grey">
+					<circle cx="240" cy="470" r="80"></circle>
+					<circle cx="420" cy="500" r="30"></circle>
+				</g>
+				<circle class="gamut-shape" id="gamut-mystery" cx="560" cy="530" r="40"></circle>
+			</svg>
 		</div>
+		<p>
+			Intellectually, I know that blue gives way to red via purple along the straight edge at the bottom of the gamut. But my eyes and brain simply wouldn't register those colours out of context
+		</p>
+		<p>
+			"Mystery" is a murky orange-brown with enough blue to be grey/purple/pink. I'm not confident enough to give it a better label than that.
+		</p>
+		<p>
+			Life is an adventure &hellip;
+		</p>
 	</article>
 	<hr>
-	<article>
-		<a href="#" onclick="unfold('astrarisk');return false;">
+
+	<article id="astrarisk">
+		<div class="title">
 			<img src="img/astrarisk_thumb.png">
-			<p class="lede">
-				I made Astrarisk.js
-			</p>
-		</a>
+			<h2>I made Astrarisk.js</h2>
+		</div>
 		<p class="strap">
 			Formerly an iOS game, now available in Web browsers everywhere.
 		</p>
-		<div class="folded closed" id="astrarisk">
-			<p>
-				A long, long time ago, I made a game for iOS called Astrarisk. This would have been in early 2010 when the device <i>du jour</i> was the iPhone 3GS, however the game itself was based on an even earlier program from the times when computer magazines printed the BASIC source code for you to type in and run. The gimmick behind Astrarisk was that it fit into one line of BBC BASIC on the old Model B. 
-			</p>
-			<p>
-				It was the source of much enjoyment at college in the early 1990s when we had accounts on the RM Nimbus machines which had excellent BBC BASIC emulators. In 1996, now at university, I made a version out of Java applets for some early version of Netscape on the HP-UX workstations there.
-			</p>
-			<p>
-				The version presented here is (at least) the fourth version I've written. The original author, and all prior versions by me, are <a href="https://www.google.com/search?q=astrarisk+ios+mcglashan&client=safari">lost to the mists of time</a>, though I may have the iOS source code on an old backup drive <i>somewhere</i> &hellip;
-			</p>
-			<p>
-				It had a pretty epic green icon, as you can see:
-			</p>
-			<p>
-				<img src="img/astrarisk_original.jpg">
-			</p>
-			<p>
-				Nowadays you can <a href="javascript:open('astrarisk.js/game.html','astrarisk','left=100,top=100,width=800,height=512');">play it right here on the web</a> (opens a wee popup window) and if you're curious, the source code is on <a href="https://github.com/davidmcglashan/astrarisk.js">Github</a>.
-			</p>
-			<hr>
-			<p>
-				The iOS version was priced at 79p, the lowest tier Apple provided in 2010. It made no money so eventually I made it free to buy. After a few months, all of a sudden, it had 11,000 downloads from Japan in one weekend and got to #2 in Games on the Japanese App Store before returning to zero-daily-download obscurity. I've no idea why. I suppose somewhere it picked up a mention or a recommendation and this brief, unsolicitied exposure was enough to catapult it up the charts.
-			</p>
-		</div>
+		<p>
+			A long, long time ago, I made a game for iOS called Astrarisk. This would have been in early 2010 when the device <i>du jour</i> was the iPhone 3GS, however the game itself was based on an even earlier program from the times when computer magazines printed the BASIC source code for you to type in and run. The gimmick behind Astrarisk was that it fit into one line of BBC BASIC on the old Model B. 
+		</p>
+		<p>
+			It was the source of much enjoyment at college in the early 1990s when we had accounts on the RM Nimbus machines which had excellent BBC BASIC emulators. In 1996, now at university, I made a version out of Java applets for some early version of Netscape on the HP-UX workstations there.
+		</p>
+		<p>
+			The version presented here is (at least) the fourth version I've written. The original author, and all prior versions by me, are <a href="https://www.google.com/search?q=astrarisk+ios+mcglashan&client=safari">lost to the mists of time</a>, though I may have the iOS source code on an old backup drive <i>somewhere</i> &hellip;
+		</p>
+		<p>
+			It had a pretty epic green icon, as you can see:
+		</p>
+		<p>
+			<img src="img/astrarisk_original.jpg">
+		</p>
+		<p>
+			Nowadays you can <a href="javascript:open('astrarisk.js/game.html','astrarisk','left=100,top=100,width=800,height=512');">play it right here on the web</a> (opens a wee popup window) and if you're curious, the source code is on <a href="https://github.com/davidmcglashan/astrarisk.js">Github</a>.
+		</p>
+		<hr>
+		<p>
+			The iOS version was priced at 79p, the lowest tier Apple provided in 2010. It made no money so eventually I made it free to buy. After a few months, all of a sudden, it had 11,000 downloads from Japan in one weekend and got to #2 in Games on the Japanese App Store before returning to zero-daily-download obscurity. I've no idea why. I suppose somewhere it picked up a mention or a recommendation and this brief, unsolicitied exposure was enough to catapult it up the charts.
+		</p>
 	</article>
 	<hr>
-	<article>
-		<a href="#" onclick="unfold('stringhorse');return false;">
+
+	<article id="stringhorse">
+		<div class="title">
 			<img src="img/horse.png">
-			<p class="lede">
-				I made Stringhorse
-			</p>
-		</a>
-		<p class="strap">
-			Try it at <a href="https://stringhorse.mcglashan.net/">https://stringhorse.mcglashan.net/</a>
-		</p>
-		<div class="folded closed" id="stringhorse">
-			<p>
-				I frequently find myself running into the same class of text manipulation problem both at work and when doing computer stuff in my spare time. Given an arbitrary text source, how do I quickly sort it? Or extract the bits I'm interested in? Or turn a list of Jira ticket IDs into hyperlinks I can click on?
-			</p>
-			<p>
-				On a POSIX system one would naturally tend to solving these problems with tools like sed, awk, and grep, or with Perl or Python, and regular expressions. But when I'm already quite deep in a separate problem the last thing I want is more windows on the desktop. I'm already working, I don't need more clutter, so stringhorse runs in a browser tab. I paste in the source, quickly build the recipe, and see the output in real time.
-			</p>
-			<img src="img/stringhorse.png" class="spanning">
+			<h2>Various Horses</h2>
 		</div>
+		<p class="strap">
+			Useful tools for work done as webapps.
+		</p>
+		<p>
+			I frequently find myself running into the same class of text manipulation problem both at work and when doing computer stuff in my spare time. Given an arbitrary text source, how do I quickly sort it? Or extract the bits I'm interested in? Or turn a list of Jira ticket IDs into hyperlinks I can click on?
+		</p>
+		<p>
+			On a POSIX system one would naturally tend to solving these problems with tools like sed, awk, and grep, or with Perl or Python, and regular expressions. But when I'm already quite deep in a separate problem the last thing I want is more windows on the desktop. I'm already working, I don't need more clutter, so stringhorse runs in a browser tab. I paste in the source, quickly build the recipe, and see the output in real time.
+		</p>
+		<img src="img/stringhorse.png" class="spanning">
+		<p>
+			There are three horses in the <i>... ahem ...</i> stable:
+			<ul>
+				<li><a href="https://stringhorse.mcglashan.net/">Stringhorse</a> for text manipulation</li>
+				<li><a href="https://csvhorse.mcglashan.net/">CSVhorse</a> for creating CSV files quickly from scratch</li>
+				<li><a href="https://shothorse.mcglashan.net/">Shothorse</a> for drawing boxes and arrows on screenshots</li>
+			</ul>
+			<div class="roll">
+				<a class="external" href="https://stringhorse.mcglashan.net/"><img src="img/stringhorse_logo.png"></a>
+				<a class="external" href="https://csvhorse.mcglashan.net/"><img src="img/csvhorse_logo.png"></a>
+				<a class="external" href="https://shothorse.mcglashan.net"><img src="img/shothorse_logo.png"></a>
+			</div>
+		</p>
 	</article>
+	<hr>
+
+	<article id="cardgames">
+		<div class="title">
+			<img src="img/cardgames.png">
+			<h2>Card Games</h2>
+		</div>
+		<p class="strap">Solitaire and other distractions.</p>
+		<p>For the amusement of no one but myself, I write the occasional card game in Javascript. You can play them online at <a href="https://cardgames.mcglashan.net/">cardgames.mcglashan.net</a>.</p>
+	</article>
+
 	<footer>
 		<hr>
 		<ul>
 			<li>&copy; 2025 David McGlashan</li>
 			<li>Hosted on <a href="https://docs.github.com/en/pages">Github Pages</a></li>
 			<li>The typeface is <a href="https://indestructibletype.com/Jost.html">Jost</a> by indestructible type</li>
+			<li><a href="https://www.flaticon.com/free-icons/wish-list" title="wish-list icons">Wish-list icons created by Smashicons - Flaticon</a></li>
 		</ul>
 	</footer>
 	<script type="text/javascript">
-		function photo(e) {
-			var img = document.createElement('img')
-			img.src = "img/"+e+".jpg"
-			img.classList.add("image")
-			var elem = document.getElementById('photo');
-			elem.innerHTML = ""
-			elem.appendChild(img)
-			elem.classList.add("open");
-		}
-		function unfold(e) {
-			var elem = document.getElementById(e);
-			elem.classList.toggle("open");
-			elem.classList.toggle("closed");
-		}
 		function gamut(g) {
 			// Hide all the gamut shapes
 			document.querySelectorAll(".gamut-shape").forEach( function(e,i,a) {

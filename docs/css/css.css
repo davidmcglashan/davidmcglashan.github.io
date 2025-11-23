@@ -6,6 +6,11 @@ body {
 	margin-left: -20rem;
 	max-width: 40rem;
 }
+nav ul,
+article ul {
+	list-style-type: lower-roman;
+	padding-inline-start: 12rem;
+}
 h1 {
 	font-size: 4em;
 	font-weight: normal;
@@ -28,6 +33,7 @@ hr {
 article hr {
 	margin-left: 12rem;
 }
+
 p {
 	margin-top: 0;
 }
@@ -41,24 +47,15 @@ img.image {
 .strap {
 	font-weight: 800;
 }
-a.roundel {
+img.roundel {
 	position: absolute;
 	margin-left: 0;	
-	border-radius: 1.35em;
-	border: 4px solid transparent;
 	padding: 0.25em;
-}
-a.roundel:focus,a.roundel:hover {
-	border: 4px solid #36c;
-}
-a.roundel>img {
 	border-radius: 50%;
 	width: 10rem;
 	display: block;
 }
-a.roundel:hover>img {
-	border-radius: 1em;
-}
+
 div.roll {
 	margin-left: 11.5rem;
 	margin-top: 1em;
@@ -82,18 +79,15 @@ div.roll a img,div.roll a svg {
 	height: 4em;
 	border-radius: 0.5em;
 }
-article a {
+article a, nav a {
 	text-decoration: none;
 	color: #36c;
 }
-article a:focus,article a:hover {
+article a:focus,article a:hover, nav a:focus,nav a:hover {
 	text-decoration: underline;
 	text-decoration-thickness: 3px;
 }
-article a:focus img,article a:hover img {
-	border: 4px solid #36c;
-}
-article a img {
+article .title img {
 	border-radius: 1.35em;
 	display: block;
 	border: 4px solid transparent;
@@ -102,24 +96,14 @@ article a img {
 	left: 5rem;	
 	width: 5rem;
 }
+article .title h2 {
+	margin-left: 12rem;
+}
 article img.spanning {
 	width: 100%;
 }
 div.roll a.external {
 	border-style: dotted;
-}
-
-div.folded {
-    max-height: 0;
-    overflow: hidden;
-}
-div.folded.open {
-    max-height: 1200px;
-    transition: max-height 0.5s ease-in-out;
-}
-div.folded.closed {
-    max-height: 0;
-    transition: max-height 0.5s ease-in-out;
 }
 
 #colourblind ul {
@@ -161,6 +145,10 @@ div.gamut svg {
 	stroke-dasharray: 4;
 	fill: none;
 	display: none;
+}
+
+#stringhorse div.roll img {
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
 }
 
 footer ul {
