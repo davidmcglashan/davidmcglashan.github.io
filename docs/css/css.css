@@ -166,25 +166,37 @@ footer li {
 @media only screen and (max-width: 768px) {
 	body {
 		position: relative;
-		margin-top: 4rem;
+		margin-top: 0;
 		margin-left: 0;
-	    left: 0;
-    	max-width: 95%;
+		left: auto;
+		max-width: 95%;
+		overflow-x: hidden;
+		padding: 1rem;
 	}
-	a.roundel>img {
-		width: 8rem;
+	h1 {
+		margin: 2rem 0;
+		width: 100%;
+		text-align: center;
+	}
+	body > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
 	}
 	.lede {
-		margin-left: 10rem;
+		margin-left: unset;
+		margin-bottom: 0;
 	}
-	h1,p,article .lede, footer ul {
-		margin-left: 8rem;
+	img.roundel {
+		position: unset;
 	}
 	article a img {
 		left: 1rem;
 	}
 	div.roll {
-		margin-left: 9.5rem;
+		margin-top: unset;
+		margin-left: unset;
 	}
 	div.roll a {
 		height: 3rem;
@@ -194,6 +206,29 @@ footer li {
 		height: 3em;
 	}
 	hr {
-		margin: 1rem 0rem 1rem 6rem;
+		margin: 2rem 1rem;
+	}
+	nav ul, article ul {
+		padding-inline-start: revert;
+	}
+	article p {
+		margin-left: unset;
+	}
+	div.title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	div.title img {
+		position: revert;
+		left: unset;
+		width: 6rem;
+	}
+	div.title h2 {
+		margin-left: unset;
+		text-align: center;
+	}
+	footer ul {
+		margin-left: unset;
 	}
 }
